@@ -3,9 +3,9 @@
 MLA Helper is an open source program with the intentions of creating the best MLA experience possible.
 
 # Installation
-Here are the installation steps
+Here are the installation steps [link](https://github.com/WillDev12/MLA-Helper/blob/main/scr/script.gs)
 ```
-1. Go to [here](https://github.com/WillDev12/MLA-Helper/blob/main/script.gs) and copy the code
+1. Go to the link provided and copy the code
 2. Open the Google Dock of your choice and under the top menu select Extensions\Apps Script
 3. When the new tab opens, delete the premade text and paste the code.
 4. Go back to the dock, click refresh, and enjoy!
