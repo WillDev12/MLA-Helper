@@ -2,6 +2,15 @@
 
 MLA Helper is an open source program with the intentions of creating the best MLA experience possible.
 
+# Installation
+Here are the installation steps
+'''
+1. Go to [here](https://github.com/WillDev12/MLA-Helper/blob/main/script.gs) and copy the code
+2. Open the Google Dock of your choice and under the top menu select Extensions\Apps Script
+3. When the new tab opens, delete the premade text and paste the code.
+4. Go back to the dock, click refresh, and enjoy!
+'''
+
 # What it does
 
 Here is a breif list of things that MLA Helper can do:
@@ -33,11 +42,3 @@ It it easy to install[^3]
 [^2]: When creating MLA helper, I decided to make the most foolproof GUI possible so that anyone would be able to use it problem free.  Because of this, it is very organised and gets the job done for those who are not tech handy.
 
 [^3]: Installing the program is easy and can be done in no time.  Please see [Installation](https://github.com/WillDev12/MLA-Helper/blob/main/readme.md#installation) for firther details or click [here](https://direct-link.net/378237/mla-helper) for a pre-made template (ad link) 
-
-# Installation
-Here are the installation steps
-
-1. Go to [here](https://github.com/WillDev12/MLA-Helper/blob/main/script.gs) and copy the code
-2. Open the Google Dock of your choice and under the top menu select Extensions\Apps Script
-3. When the new tab opens, delete the premade text and paste the code.
-4. Go back to the dock, click refresh, and enjoy!
