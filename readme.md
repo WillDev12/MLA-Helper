@@ -9,13 +9,12 @@ Here are the installation steps
 2. Open the Google Dock of your choice and under the top menu select Extensions\Apps Script
 3. When the new tab opens, delete the premade text and paste the code.
 4. Go back to the dock, click refresh, and enjoy!
-'''
 
+```
 # What it does
 
 Here is a breif list of things that MLA Helper can do:
-
-- - -
+```
 
  * Fonts and Formatting
    * Change selected text to Times New Roman
