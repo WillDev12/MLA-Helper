@@ -10,6 +10,11 @@ Here are the installation steps
 3. When the new tab opens, delete the premade text and paste the code.
 4. Go back to the dock, click refresh, and enjoy!
 ```
+You could also go [here](https://direct-link.net/378237/mla-helper) to copy a prebuilt template for Google Docs (ad link):
+
+```
+https://direct-link.net/378237/mla-helper
+```
 
 # What it does
 
