@@ -32,7 +32,7 @@ It it easy to install[^3]
 
 [^2]: When creating MLA helper, I decided to make the most foolproof GUI possible so that anyone would be able to use it problem free.  Because of this, it is very organised and gets the job done for those who are not tech handy.
 
-[^3]: Installing the program is easy and can be done in no time.  Please see [Installation]() for firther details or click [here] for a pre-made template (ad link) 
+[^3]: Installing the program is easy and can be done in no time.  Please see [Installation](https://github.com/WillDev12/MLA-Helper/blob/main/readme.md#installation) for firther details or click [here](https://direct-link.net/378237/mla-helper) for a pre-made template (ad link) 
 
 # Installation
 Here are the installation steps
