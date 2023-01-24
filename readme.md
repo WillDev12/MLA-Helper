@@ -1,4 +1,3 @@
-<video src='recording.webm' width=180/>
 # MLA Helper v1.0.0
 
 MLA Helper is an open source program with the intentions of creating the best MLA experience possible.
