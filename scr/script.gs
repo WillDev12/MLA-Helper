@@ -66,8 +66,6 @@ function newHeader()
 
   body.insertParagraph(1, "TITLE").setAlignment(DocumentApp.HorizontalAlignment.CENTER);
 
-  doc.getHeader().insertParagraph(0, "LASTNAME 1").setAlignment(DocumentApp.HorizontalAlignment.RIGHT);
-
 }
 
 function timesNew()
