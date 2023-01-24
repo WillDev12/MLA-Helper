@@ -6,9 +6,9 @@ MLA Helper is an open source program with the intentions of creating the best ML
 
 Here is a breif list of things that MLA Helper can do:
 
- Markup : * Fonts and Formatting
-              * Change selected text to Times New Roman
-              * Change a sentence to Italic
+* Fonts and Formatting
+  * Change selected text to Times New Roman
+    * Change a sentence to Italic
                   * Sub-nested bullet etc
           * Bullet list item 2
 
