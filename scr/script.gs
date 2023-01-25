@@ -140,7 +140,7 @@ function citingsPage()
 function SendQuote(quote, author, pagen) 
 { 
   
-  var str = '"' + quote + '" (' + author + ", " + pagen + ")."
+  var str = '"' + quote + '" (' + author + ", " + pagen + ").";
 
   var cursor = DocumentApp.getActiveDocument().getCursor();
   var surroundingText = cursor.getSurroundingText();
