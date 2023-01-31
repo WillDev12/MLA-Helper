@@ -30,6 +30,14 @@ Here is a breif list of things that MLA Helper can do:
    * Create a works cited page in the click of a button
  * Heading
    * Create MLA header in the click of a button
+   
+# Changelog
+
+```
+Script update:
+  -Formatted quotes properly
+  -Updated template
+```
 
 - - -
 
