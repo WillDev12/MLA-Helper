@@ -1,10 +1,13 @@
+<h1 align="center">MLA Helper v1.0.0</h1><br>
 <p align="center">
-  <img src="https://www.linkpicture.com/view.php?img=LPic63e18019db943658120709" width="200" height="300">
+  <img src="https://github.com/WillDev12/MLA-Helper/blob/main/img/Google_Docs_logo_(2014-2020).svg%20(1).png" width="150" height="200">
+</p><br>
+<p align="center">
+  <a href="https://github.com/WillDev12">
+    <img src="https://img.shields.io/github/followers/WillDev12?color=success&label=Follow%20my%20github&logo=github&style=for-the-badge">
+  <a href="https://github.com/WillDev12/MLA-Helper/network/members">
+    <img src="https://img.shields.io/github/forks/WillDev12/MLA-Helper?logo=git&style=for-the-badge">
 </p>
-
-# MLA Helper v1.0.0
-
-MLA Helper is an open source program with the intentions of creating the best MLA experience possible.
 
 # Installation
 Here are the installation steps:
