@@ -7,6 +7,8 @@
     <img src="https://img.shields.io/github/followers/WillDev12?color=success&label=Follow%20my%20github&logo=github&style=for-the-badge">
   <a href="https://github.com/WillDev12/MLA-Helper/network/members">
     <img src="https://img.shields.io/github/forks/WillDev12/MLA-Helper?logo=git&style=for-the-badge">
+  <a href="https://github.com/WillDev12/MLA-Helper/stargazers">
+    <img src="https://img.shields.io/github/stars/WillDev12/MLA-Helper?logo=git&color=yellow&style=for-the-badge">
 </p>
 
 # Installation
