@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <base target="_top">
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script>
+        
+          function SendCitation() {
+        
+            var cont = document.getElementById("contribution1").value;
+            var afn = document.getElementById("afn").value;
+            var amn = document.getElementById("amn").value;
+            var aln = document.getElementById("aln").value;
+            var asfx = document.getElementById("asfx").value;
+            var title = document.getElementById("title").value;
+            var pub = document.getElementById("pub").value;
+            var city = document.getElementById("city").value;
+            var sn = document.getElementById("sn").value;
+            var snum = document.getElementById("snum").value;
+            var edition = document.getElementById("edition").value;
+            var year = document.getElementById("year").value;
+        
+            google.script.run.CreateCitation(cont, afn, amn, aln, asfx, title, pub, city, sn, snum, edition, year);
+            google.script.host.close();
+        
+          }
+        
+        </script>
+      </head>
+      
+    <body>
+
+      <div class="w3-card">
+
+        <div class="w3-container w3-blue">
+          <h2>Author & Contributions</h2>
+        </div>
+
+        <div class="w3-container w3-light-gray" style="padding: 20px">
+
+          <label for="contribution1">Choose a role:</label>
+            <select name="contribution1" id="contribution1">
+            <option value="default">Role</option><option value="Author">Author</option>
+            <option value="Translator">Translator</option>
+          </select><br>
+        
+          Authors first name: <br> <input type="text" id="afn" style="width:260px" required/><br>
+          Authors middle name: <br> <input type="text" id="amn" style="width:260px" required/><br>
+          Authors last name: <br> <input type="text" id="aln" style="width:260px" required/><br>
+          Suffix: <br> <input type="text" id="asfx" style="width:150px" required/><br><br>
+        
+        </div>
+
+        <br>
+
+        <div class="w3-container w3-blue">
+          <h2>Book Info</h2>
+        </div>
+
+        <div class="w3-container w3-light-gray" style="padding: 20px">
+        
+          Title: <br> <input type="text" id="title" style="width:260px" required/><br>
+          Publisher: <br> <input type="text" id="pub" style="width:260px" required/><br>
+          Year: <input type="text" id="year" style="width:150px" required/><br>
+          Publication City: <br> <input type="text" id="city" style="width:260px" required/><br>
+          Edition: <br> <input type="text" id="edition" style="width:260px" required/><br>
+          Series name & number: <br> <input type="text" id="sn" style="width:100px" required/>
+          <input type="text" id="snum" style="width:100px" required/><br>
+          
+          <input type="button" value="Create" onclick="SendCitation()" style="width:100px; margin-top: 20px"/>
+
+        </div>
+        
+    </body>
+  </html>
