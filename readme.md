@@ -15,9 +15,10 @@
 # Installation
 Here are the installation steps:
 
-1. Open the Google Dock of your choice and under the top menu select Extensions\Apps Script
-2. When the new tab opens, delete the premade text and paste the code.
-3. Go back to the dock, click refresh, and enjoy!
+1. Copy the code by hovering over the right side and pressing the square
+2. Open the Google Dock of your choice and under the top menu select Extensions\Apps Script
+3. When the new tab opens, delete the premade text and paste the code.
+4. Go back to the dock, click refresh, and enjoy!
 
 Install code:
 ``` javascript
