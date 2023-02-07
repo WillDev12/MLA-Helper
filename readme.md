@@ -45,17 +45,65 @@ Here is a breif list of things that MLA Helper can do:
    * Create a works cited page in the click of a button
  * Heading
    * Create MLA header in the click of a button
+ * Library
+   * Hosts interactive Google Script library
+
+# Library & Brief tutorial
+
+MLA Helper now hosts a Google Script library where you can use our functions in your personal code!
+
+Library ID:
+``` javascript
+1g-0LjSh1pEMcYM4aT9tBLyONhwIOd8iLlg901Va3yYjhAY9JagfNnY_B
+```
+
+<h2>How to install:</h2>
+
+  1. Copy the provided id
+  2. Open the GS file of your choice.
+  3. Under "Library," press the plus button, paste, and add.
+  
+  - - -
+  
+Using is simple, but following the instructions will make it easier.
+
+Here is how to define a quote: [Remember to define with var before sending to doc]
+``` javascript
+function newQuote() {
+
+  var quote = MLAHelper.createQuote("quote", "author", "pg#");
+  var citation = MLAHelper.createCitation("authorFirstName", "authorMiddleName", "authorLastName", "authorSuffix", "contribution", "title", "publisher", "city", "seriesName", "seriesNumber", "edition", "year");
+  Logger.log(quote);
+  Logger.log(citation);
+  
+}
+```
+The output should be similar to this:
+``` javascript
+Execution log
+-:--:-- AM/PM	Notice	Execution started
+-:--:-- AM/PM	Info	"quote" (author pg#).
+-:--:-- AM/PM	Info	authorLastName, authorMiddleName authorFirstName, authorSuffix, contribution. title. edition ed., city, 
+                        publisher, year. seriesName, seriesNumber.
+-:--:--	Notice	Execution completed
+```
+- - -
+You can also generate base foundations for an MLA essay:
+``` javascript
+function setNew() {
+  
+    MLAHelper.createHeader("name", "teacherName", "className", "day", "month", "year", "title");
+  
+}
+```
+
+- - -
    
 # Changelog
 
 ```
-Brief UI update:
-  -Make the dialog look less rushed
-  -1 line script
-  -MD update
-  -More source code options
-  -Easier install
-  -Updated template
+Library update:
+  -Added GS library
 ```
 
 - - -
