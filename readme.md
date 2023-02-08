@@ -48,6 +48,17 @@ Here is a breif list of things that MLA Helper can do:
  * Library
    * Hosts interactive Google Script library
 
+- - -
+   
+# Changelog
+
+```
+Library update:
+  -Added GS library
+```
+
+- - -
+
 # Library & Brief tutorial
 
 MLA Helper now hosts a Google Script library where you can use our functions in your personal code!
@@ -95,15 +106,6 @@ function setNew() {
     MLAHelper.createHeader("name", "teacherName", "className", "day", "month", "year", "title");
   
 }
-```
-
-- - -
-   
-# Changelog
-
-```
-Library update:
-  -Added GS library
 ```
 
 - - -
