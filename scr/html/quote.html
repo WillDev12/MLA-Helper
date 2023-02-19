@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <base target="_top">
+
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      <script>
+
+        function CreateQuote() {
+          var quote = document.getElementById("quote").value;
+          var author = document.getElementById("author").value;
+          var pagen = document.getElementById("page").value;
+          
+          if (author === "") {
+          
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          } else if (quote === "") {
+            
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          } else if (pagen === "") {
+            
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          }
+          
+          google.script.run.SendQuote(quote, author, pagen);
+          google.script.host.close();
+        
+        }
+      
+      </script>
+    </head>
+    
+    <body>
+      
+      <div class="w3-card" style="margin: 20px">
+        <div class="w3-container w3-blue">
+          <h2>New quote</h2>
+        </div>
+        <div class="w3-container w3-light-gray"><br>
+
+          Quote: (Do not include a final period) <br> <input type="text" id="quote" style="width:260px" required/><br>
+          Authors last name: <br> <input type="text" id="author" style="width:260px" required/><br>
+          Page #: <br> <input type="text" id="page" style="width:260px" required/><br>
+          
+        <input type="button" value="Create" onclick="CreateQuote()" style="width:100px; margin-top: 20px; margin-bottom: 20px"/>
+
+        </div>
+      </div>
+      
+    </body>
+  
+</html>
