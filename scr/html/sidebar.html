@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+
+        .zoom{transition:all 0.2s ease-out;}
+        .zoom:hover{transform:scale(1.009);box-shadow:0 4px 10px 0 rgba(0,0,0,0.2)!important;}
+
+      </style>
+
+      <script>
+
+        function CreateQuote() {
+          var quote = document.getElementById("quote").value;
+          var author = document.getElementById("author").value;
+          var pagen = document.getElementById("page").value;
+          
+          if (author === "") {
+          
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          } else if (quote === "") {
+            
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          } else if (pagen === "") {
+            
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          }
+          google.script.run.SendQuote(quote, author, pagen);
+          }
+
+        function sendHeading() {
+
+          var title = document.getElementById("writingtitle").value;
+          var name = document.getElementById("fullname").value;
+          var tname = document.getElementById("teachername").value;
+          var came = document.getElementById("classname").value;
+          const date = new Date(); 
+          var day = date.getDay();
+          var month = date.getMonth();
+          var year = date.getFullYear();
+
+          google.script.run.returnedHeading(title, name, tname, came, day, month, year);
+
+        }
+        
+        function clearBookCitation() {
+
+          document.getElementById("afn").value = "";
+          document.getElementById("amn").value = "";
+          document.getElementById("aln").value = "";
+          document.getElementById("asfx").value = "";
+          document.getElementById("title").value = "";
+          document.getElementById("pub").value = "";
+          document.getElementById("city").value = "";
+          document.getElementById("sn").value = "";
+          document.getElementById("snum").value = "";
+          document.getElementById("edition").value = "";
+          document.getElementById("year").value = "";
+
+        }
+
+
+        function uiQuote(){var quote = document.getElementById("quote").value;
+          var author = document.getElementById("author").value;
+          var pagen = document.getElementById("page").value;
+          
+          if (author === "") {
+          
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          } else if (quote === "") {
+            
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          } else if (pagen === "") {
+            
+            var e = "null";
+            google.script.run.FeedbackError(e);
+            return;
+            
+          }
+
+          var str = '"' + quote + '" (' + author + " " + pagen + ")."
+          navigator.clipboard.writeText(str);
+          google.script.run.FeedbackError("Successfully copied quote to clipboard.");
+
+        }
+
+        function SendCitation(e) {
+
+          if (e === "book") {
+
+            var cont = document.getElementById("contribution1").value;
+            var afn = document.getElementById("afn").value;
+            var amn = document.getElementById("amn").value;
+            var aln = document.getElementById("aln").value;
+            var asfx = document.getElementById("asfx").value;
+            var title = document.getElementById("title").value;
+            var pub = document.getElementById("pub").value;
+            var city = document.getElementById("city").value;
+            var sn = document.getElementById("sn").value;
+            var snum = document.getElementById("snum").value;
+            var edition = document.getElementById("edition").value;
+            var year = document.getElementById("year").value;
+        
+            google.script.run.citeBook(cont, afn, amn, aln, asfx, title, pub, city, sn, snum, edition, year);
+
+          }
+          
+        }
+
+        function openPage(PageName) {
+        var i;
+        var x = document.getElementsByClassName("Page");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+          document.getElementById(PageName).style.display = "block";
+        }
+
+        function openCitePage(PageName) {
+
+        var i;
+        var x = document.getElementsByClassName("citePage");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+          document.getElementById(PageName).style.display = "block";
+        }
+
+      </script>
+
+    </head>
+
+    <body>
+
+        <div class="w3-bar w3-green" style="box-shadow:0 0 5px 0 rgba(0,0,0,0.5)">
+
+          <button class="w3-bar-item w3-button" onclick="openPage('Formatting')">Formatting</button>
+          <button class="w3-bar-item w3-button" onclick="openPage('Quote')">Quote</button>
+          <button class="w3-bar-item w3-button" onclick="openPage('Fonts')">Fonts</button>
+          <button class="w3-bar-item w3-button" onclick="openPage('Citations')">Citations</button>
+
+        </div>
+
+        <div style="padding:10px">
+        <div id="Formatting" class="Page">
+          <div class="w3-card-4 zoom w3-round-medium" style="box-shadow:0 4px 5px 0 rgba(0,0,0,0.2);">
+
+              <div class="w3-panel w3-blue">
+                <h2>Heading</h2>
+              </div>
+
+              <div class="w3-container">
+
+              <label>Your title</label>
+              <input class="w3-input" type="text" id="writingtitle">
+
+              <label>First & Last Name</label>
+              <input class="w3-input" type="text" id="fullname">
+
+              <label>Teacher's Name</label>
+              <input class="w3-input" type="text" id="teachername">
+
+              <label>Class</label>
+              <input class="w3-input" type="text" id="classname"><br>
+
+              <button class="w3-button w3-blue" style="width:100%" onclick="sendHeading()">Send</button>
+
+              </div><br>
+
+          </div>
+
+          <div class="w3-card-4 w3-margin-top zoom w3-round-medium" style="box-shadow:0 4px 5px 0 rgba(0,0,0,0.2);">
+              
+              <div class="w3-panel w3-blue">
+                <h2>Citings page</h2>
+              </div>
+
+              <div class="w3-container">
+
+                <button class="w3-button w3-blue" style="width:100%" onclick="google.script.run.citingsPage();">Format Citings Page</button>
+
+              </div><br>
+
+          </div>
+
+          <hr><div style="text-align:center"><p>© 2023 WillDev12</p></div>
+
+        </div>
+
+        <div id="Quote" class="Page" style="display:none">
+          
+
+          <div class="w3-card-4 zoom w3-round-medium" style="box-shadow:0 4px 5px 0 rgba(0,0,0,0.2);">
+
+            <div class="w3-panel w3-blue">
+
+              <h2>New Quote</h2>
+
+            </div>
+
+            <div class="w3-container">
+
+              <label>Quote (Do not include final period)</label>
+              <input class="w3-input" type="text" id="quote">
+              <label>Author's Last Name</label>
+              <input class="w3-input" type="text" id="author">
+              <label>Page number</label>
+              <input class="w3-input" type="text" id="page"><br>
+
+              <button class="w3-button w3-blue" style="width:100%" onclick="CreateQuote()">Insert in current location</button>
+              <button class="w3-button w3-blue" style="width:100%;margin-top:8px;margin-bottom:16px" onclick="uiQuote()">Copy to Clipboard</button>
+
+            </div>
+
+          </div>
+
+          <hr><div style="text-align:center"><p>© 2023 WillDev12</p></div>
+
+        </div>
+
+        <div id="Fonts" class="Page" style="display:none">
+
+          <div class="w3-card-4 w3-margin-top zoom w3-round-medium" style="box-shadow:0 4px 5px 0 rgba(0,0,0,0.2);">
+              
+              <div class="w3-panel w3-blue">
+                <h2>Times New Romanator</h2>
+              </div>
+
+              <div class="w3-container">
+
+                <button class="w3-button w3-blue" style="width:100%" onclick="google.script.run.timesNew();">Change selected text</button>
+
+              </div><br>
+
+          </div>
+
+          <div class="w3-card-4 w3-margin-top zoom w3-round-medium" style="box-shadow:0 4px 5px 0 rgba(0,0,0,0.2);">
+              
+              <div class="w3-panel w3-blue">
+                <h2>Italicator</h2>
+              </div>
+
+              <div class="w3-container">
+
+                <button class="w3-button w3-blue" style="width:100%" onclick="google.script.run.italixer();">Change selected sentence</button>
+
+              </div><br>
+
+          </div>
+
+          <hr><div style="text-align:center"><p>© 2023 WillDev12</p></div>
+
+        </div>
+
+        <div id="Citations" class="Page" style="display:none">
+
+          <div class="w3-card-4 w3-margin-top zoom w3-round-medium" style="box-shadow:0 4px 5px 0 rgba(0,0,0,0.2);">
+          <div class="w3-bar w3-blue">
+
+            <button class="w3-bar-item w3-button" onclick="openCitePage('bookPage')">Book</button>
+
+          </div>
+
+            <div id="bookPage" class="citePage w3-container">
+
+                <br>
+
+                <label for="contribution1">Choose a role:</label>
+                  <select name="contribution1" id="contribution1">
+                  <option value="default">Role</option><option value="Author">Author</option>
+                  <option value="Translator">Translator</option>
+                </select><br><br>
+
+                <label>Authors first name</label>
+                <input class="w3-input" type="text" id="afn">
+                <label>Authors middle name</label>
+                <input class="w3-input" type="text" id="amn">
+                <label>Authors last name</label>
+                <input class="w3-input" type="text" id="aln">
+                <label>Authors suffix</label>
+                <input class="w3-input" type="text" id="asfx">
+
+                <label>Title</label>
+                <input class="w3-input" type="text" id="title">
+                <label>Publisher</label>
+                <input class="w3-input" type="text" id="pub">
+                <label>Year</label>
+                <input class="w3-input" type="text" id="year">
+                <label>Publication City</label>
+                <input class="w3-input" type="text" id="city">
+                <label>Edition</label>
+                <input class="w3-input" type="text" id="edition">
+                <label>Series Name</label>
+                <input class="w3-input" type="text" id="sn">
+                <label>Series Number</label>
+                <input class="w3-input" type="text" id="snum"><br>
+
+                <button class="w3-button w3-blue" style="width:100%;" onclick="SendCitation('book')">Cite</button><br>
+                <button class="w3-button w3-blue w3-margin-top" style="width:100%;margin-bottom:16px;" onclick="clearBookCitation()">Clear</button>
+
+            </div>
+
+          </div>
+
+          <hr><div style="text-align:center"><p>© 2023 WillDev12</p></div>
+
+        </div>
+
+    </body>
+  </html>
