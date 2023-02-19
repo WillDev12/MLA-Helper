@@ -15,4 +15,6 @@ Html UIs
     - https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/scr/html/citation.html
     
 Library
-  -https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/lib/library.gs
+
+  lib
+    -https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/lib/library.gs
