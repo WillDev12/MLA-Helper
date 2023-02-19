@@ -1,0 +1,18 @@
+Script
+  
+  Open
+    - https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/scr/open/script.gs
+  Flat
+    - https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/scr/flat/script.gs
+
+Html UIs
+
+  Sidebar
+    - https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/scr/html/sidebar.html
+  Quote (GUI)
+    - https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/scr/html/quote.html
+  Citation (GUI)
+    - https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/scr/html/citation.html
+    
+Library
+  -https://raw.githubusercontent.com/WillDev12/MLA-Helper/main/lib/library.gs
