@@ -33,7 +33,7 @@ You could also go [here](https://direct-link.net/378237/mla-helper) to copy a pr
 https://direct-link.net/378237/mla-helper
 ```
 
-# What it does
+# Content
 
 Here is a breif list of things that MLA Helper can do:
 
@@ -48,7 +48,7 @@ Here is a breif list of things that MLA Helper can do:
  * Heading
    * Create MLA header in the click of a button
  * Library
-   * Hosts interactive Google Script library
+   * Interactive Google Script library
 
 - - -
    
