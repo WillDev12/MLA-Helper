@@ -1,3 +1,6 @@
+<h3 align="center">⚠️⚠️UPCOMING UPDATES⚠️⚠️</h3>
+<p align="center">MLA Helper is under verification process and will be added to the Google Appstore shortly.</p>
+
 <h1 align="center">MLA Helper v1.0.5</h1><br>
 <p align="center">
   <img src="https://github.com/WillDev12/MLA-Helper/blob/main/img/Google_Docs_logo_(2014-2020).svg%20(1).png" width="150" height="200">
